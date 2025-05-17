@@ -6,6 +6,8 @@ import bcrypt
 import io
 import contextlib
 import matplotlib.pyplot as plt
+import json
+import os
 
 # Banco de dados
 engine = create_engine('sqlite:///users.db', echo=True)
@@ -59,6 +61,35 @@ def interpretar_erro(e):
 def pagina_estudos(nome):
     st.title(f'Bem-vindo(a), {nome} à sua Jornada Python!')
     st.header('📘 Introdução ao Python')
+
+    # Noções básicas da LGPD
+    with st.expander("Noções Básicas da LGPD"):
+        st.markdown("""
+    A **LGPD (Lei Geral de Proteção de Dados Pessoais)** é a lei brasileira que regula como os dados pessoais devem ser coletados, armazenados, tratados e compartilhados, garantindo mais segurança e privacidade aos cidadãos.
+
+    ### 🧠 Conceitos principais:
+    - **Dado pessoal**: qualquer informação que identifique ou possa identificar uma pessoa (ex: nome, CPF, e-mail).
+    - **Dado sensível**: informações como origem racial, convicção religiosa, saúde ou orientação sexual.
+    - **Titular dos dados**: a pessoa a quem os dados pertencem.
+    - **Controlador**: quem decide como e por que os dados serão tratados.
+    - **Operador**: quem executa o tratamento de dados em nome do controlador.
+
+    ### ⚖️ Princípios da LGPD:
+    - Finalidade (uso claro e legítimo)
+    - Necessidade (somente dados essenciais)
+    - Transparência (informar claramente como os dados são usados)
+    - Segurança (uso de medidas técnicas para proteger os dados)
+
+    ### 👀 Direitos do titular:
+    - Acessar seus dados
+    - Corrigir dados incompletos
+    - Solicitar a exclusão dos dados
+    - Revogar consentimento
+
+    **Importante:** Toda empresa ou sistema que trata dados pessoais deve estar em conformidade com a LGPD.
+
+    🛡️ **Exemplo no seu sistema:** o armazenamento seguro de e-mails e senhas dos usuários já é um cuidado alinhado à LGPD.
+    """)
 
     # Strings
     with st.expander("1. Strings"):
@@ -301,7 +332,8 @@ def pagina_prova():
 
         # Exibir resultado
         st.write(f"Você acertou {acertos} de {len(questoes)} questões!")
-
+        salvar_resultado_json(st.session_state.nome, acertos, len(questoes))
+        
         # Exibir gráfico de desempenho
         desempenho = [acertos, len(questoes) - acertos]
         labels = ['Acertos', 'Erros']
@@ -310,6 +342,21 @@ def pagina_prova():
         ax.axis('equal') 
 
         st.pyplot(fig)
+
+def salvar_resultado_json(nome_usuario, acertos, total_questoes):
+    resultado = {
+        "nome": nome_usuario,
+        "acertos": acertos,
+        "total_questoes": total_questoes
+    }
+    
+    # Cria pasta de resultados se não existir
+    os.makedirs("resultados_json", exist_ok=True)
+    # Salva em arquivo separado por nome
+    caminho = f"resultados_json/{nome_usuario.replace(' ', '_')}.json"
+    with open(caminho, "w", encoding="utf-8") as f:
+        json.dump(resultado, f, ensure_ascii=False, indent=4)
+
 
 # Página inicial
 if 'page' not in st.session_state:

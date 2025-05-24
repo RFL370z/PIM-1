@@ -49,20 +49,6 @@ Criar uma aplicação web educativa com interface intuitiva e recursos interativ
 3. Acesse a aplicação no navegador padrão pelo link exibido no terminal.
 
 ---
-
-## 🔐 Sistema de Login e Cadastro
-
-A aplicação oferece um sistema seguro de autenticação, com:
-
-- Cadastro com **nome, email e senha**
-- Login com validação segura da senha
-- Criptografia de senhas usando **bcrypt**
-- Armazenamento seguro em banco de dados SQLite
-
-**Exemplo de criptografia:**
-```python
-hashed_password = bcrypt.hashpw(senha.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
-
 🔐 Política de Dados e Privacidade
 Este projeto segue práticas básicas de segurança e privacidade de dados, com foco na conformidade com a LGPD (Lei Geral de Proteção de Dados Pessoais):
 
@@ -103,3 +89,18 @@ Facilidade de uso	Interface familiar para a maioria dos integrantes do grupo.
 Desempenho em notebooks	Sistema otimizado para dispositivos móveis, com boas práticas de consumo energético.
 
 🎓 A escolha levou em conta a disponibilidade da ferramenta, o nível de conhecimento dos participantes e a necessidade de um ambiente confiável para o desenvolvimento de um projeto educacional.
+
+## 🔐 Sistema de Login e Cadastro
+
+A aplicação oferece um sistema seguro de autenticação, com:
+
+- Cadastro com **nome, email e senha**
+- Login com validação segura da senha
+- Criptografia de senhas usando **bcrypt**
+- Armazenamento seguro em banco de dados SQLite
+
+**Exemplo de criptografia:**
+```python
+hashed_password = bcrypt.hashpw(senha.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
+
+

@@ -49,7 +49,7 @@ Criar uma aplicação web educativa com interface intuitiva e recursos interativ
 3. Acesse a aplicação no navegador padrão pelo link exibido no terminal.
 
 ---
-🔐 Política de Dados e Privacidade
+## 🔐 Política de Dados e Privacidade
 Este projeto segue práticas básicas de segurança e privacidade de dados, com foco na conformidade com a LGPD (Lei Geral de Proteção de Dados Pessoais):
 
 Coleta mínima de dados: Apenas nome, e-mail e senha são solicitados no cadastro.
@@ -64,7 +64,9 @@ Sem compartilhamento de dados com terceiros.
 
 ✅ O sistema pode ser adaptado para uso real mediante aplicação de políticas mais robustas, como consentimento explícito e termos de uso.
 
-🌱 Estratégias para Menor Consumo de Energia
+---
+
+## 🌱 Estratégias para Menor Consumo de Energia
 Durante o desenvolvimento e execução do projeto, foram adotadas medidas para reduzir o consumo energético:
 
 Uso de ferramentas leves como Streamlit e SQLite, que não exigem servidores ou serviços em nuvem pesados.
@@ -77,7 +79,9 @@ Codificação otimizada para reduzir processamento desnecessário (uso eficiente
 
 💡 O foco foi desenvolver uma aplicação eficiente, de fácil execução em computadores comuns, sem necessidade de infraestrutura complexa.
 
-💻 Justificativa: Escolha do Windows 11 Pro
+---
+
+## 💻 Justificativa: Escolha do Windows 11 Pro
 O sistema foi desenvolvido em ambiente Windows 11 Pro, considerando os seguintes critérios:
 
 Critério	Justificativa
@@ -89,6 +93,8 @@ Facilidade de uso	Interface familiar para a maioria dos integrantes do grupo.
 Desempenho em notebooks	Sistema otimizado para dispositivos móveis, com boas práticas de consumo energético.
 
 🎓 A escolha levou em conta a disponibilidade da ferramenta, o nível de conhecimento dos participantes e a necessidade de um ambiente confiável para o desenvolvimento de um projeto educacional.
+
+---
 
 ## 🔐 Sistema de Login e Cadastro
 

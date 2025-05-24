@@ -7,14 +7,15 @@ O sistema foi construído em grupo com o objetivo de ensinar lógica de programa
 
 ## 🙏🏼 Participantes - Grupo
 
-| Nome Completo                       | R.A.    |
-| ----------------------------------- | ------- |
-| Gustavo Melo de Lima Pereira        | F363JC0 |
-| Gabriel Calebe Teixeira Brandão     | H688671 |
-| Leticia Mocci Dezanete              | H765GB8 |
-| Rafael Henrique Jubilato Batista    | H70CJG2 |
+| Nome Completo                         | R.A.    |
+|-------------------------------------|---------|
+| Gustavo Melo de Lima Pereira         | F363JC0 |
+| Gabriel Calebe Teixeira Brandão      | H688671 |
+| Leticia Mocci Dezanete               | H765GB8 |
+| Rafael Henrique Jubilato Batista     | H70CJG2 |
 | Rickson Tadeu Candido Pedreira      | H520BA0 |
 | Pedro H. dos Reis Cassiano da Silva | H765CC7 |
+| Pedro Santana França | R854BD3 | 
 
 ---
 

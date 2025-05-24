@@ -1,5 +1,7 @@
 # 📚 Curso Básico de Python para Iniciantes
 
+Apresentação do PIM: https://apresentacaodopimunip.my.canva.site/
+
 Projeto desenvolvido como trabalho acadêmico para a conclusão do **1º semestre do curso de Análise e Desenvolvimento de Sistemas** da **UNIP – Universidade Paulista**. 
 O sistema foi construído em grupo com o objetivo de ensinar lógica de programação e fundamentos da linguagem Python de forma didática, interativa e acessível.
 
